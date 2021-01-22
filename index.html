@@ -1,181 +1,409 @@
-<html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LiRa 2.0</title>
+<!DOCTYPE html>
+<html lang="en">
 
-<link rel="manifest" href="/site.webmanifest">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="user-scalable=yes" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+    <title>LiRa</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+   <meta property="og:type" content="webassets">
+        <meta property="og:url" content="https://hoahuynh-lira.github.io/">
+        <meta property="og:title" content="LiRa">
+         <link href="./assets/LiRa.png" rel="shortcut icon">
 
+</head>
 
-<link rel="stylesheet" href="https://www.saptet.com/__/_css.css?ver=1610477332"><style>
-/* @font-face {font-family: 'calligraphy'; src:url('./__/calli.ttf');} */
+<body>
 
-body{font-family: 'Nunito', sans-serif;background:#000000;}
-h2{font-size:calc(1rem + 1.2vw);}
-a{color:#fff;/*#be2119;*/}
-.fill-color{background:#fff;color:#fff;}
-.outline-color{border-color:#fff;color:#fff;}
-.clock,.home h1,.home h2,.home #tetornot{font-family:'Dancing Script',cursive;font-weight:700;text-align:center;}
-.home #tetornot{font-size:calc(.9rem + 1.2vw);}
-.coming{color: #fff;}
-.logo{width: 80px;}
-.home h1 {font-size:calc(.96rem + 1.9vw);margin-top:.7em;}
-.home h2{font-size:calc(1.8rem + 3.6vw);}
-.home .main-article{margin:0;}
-.home #main h2+p img:first-child{max-width:700px;}
-.clock .num{font-size:calc(2rem + 3.6vw);}
-.clock .num#days-2{font-size:calc(.5rem + 1.2vw);}
-.clock .text{font-size:calc(.7rem + 1.7vw);}
-#header{display:flex;align-items:center;justify-content:center;padding-top:.6em;padding-bottom:.6em;box-shadow:1px 1px 10px rgba(0,0,0,0.15);}
-.logo img {width:calc(2.5vw + 25px);}
-nav>a.button{padding:0 .9em;height:28px;font-size:.9em;}
-nav>a,.share{margin-left:2vw;}
-#menu{padding:1em;}
-#menu li{padding:.5em 0;border-bottom:2px solid #eee;font-weight:bold;}
-button.hamburger{display:block;padding:0;order:-1;}
-.hamburger>div {width:calc(1vw + 18px);height:3px;background:#d8303b;margin:calc(.3vw + 2px) 0;border-radius:100px;}
+   
 
-#main img{margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);width:auto;max-width:calc(100% + 30px);}
-
-.clock{display:flex;justify-content:space-around;flex-wrap:wrap;margin:1.5em .5em -1em;}
-.clock  .clock-item{width:35%;padding-bottom:35%;border-radius:30%;overflow:hidden;background:#fff;position:relative;}
-.clock>*:nth-child(-n+2){margin-bottom:1em;}
-.clock .clock-item>*{position:absolute;width:100%;display:flex;align-items:center;justify-content:center;}
-
-.clock .num{top:0;height:72%;}
-.clock .num#days-2{top:55%;height:17%;}
-.clock .text{bottom:0;height:28%;background:#fff;text-transform:uppercase;font-weight:400;}
-
-.featured{font-style:italic;text-transform:uppercase;font-size:.9em;}
-.featured:after{content:"NEW";margin-left:.3em;color:#be2119;font-size:.7em;font-weight:700;vertical-align:super;}
-.share-bottom{text-align:center;margin-top:2em;}
-
-figcaption{text-align:center;font-style:italic;margin-top:.6em;}
-
-@media only screen and (min-width:991px){
-.clock{margin-left:-3vw;margin-right:-3vw;}	
-}
-@media only screen and (min-width:760px) {
-#header,#main,#footer{padding-left:calc(35vw - 250px);padding-right:calc(35vw - 250px);}
-#main img{margin:0 auto;max-width:100%;}
-#main img{margin-top:1.2em;}
-}
-@media only screen and (min-width:568px) {
-.clock{justify-content:space-between;}
-.clock .clock-item{width:22%;padding-bottom:22%;}
-.clock .clock-item:nth-child(-n+2){margin-bottom:0;}	
-}
-
-#footer{background:#fff;text-align:center;padding-top:2em;padding-bottom:2em;color:#ccc;}
-#footer img{width:30%;max-width:160px;margin-left:auto;margin-right:auto;}
-#footer a{color:#fff;font-weight:bold;}
-#footer a+a{margin-left:1vw;}
-#footer>*+*{margin-top:.6em;}
-
-
-
-
-
-
-.clearfix:after { content: "\00A0"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}html[xmlns] .clearfix { display: block;}* html .clearfix{ height: 1%;}
-
-#topbar{background-color:#000;padding:5px 0;}
-.colorlight{text-shadow: 0 0 10px #efe81d,0 0 20px #efe81d,0 0 30px #efe81d,0 0 40px #f80f1f,0 0 70px #f80f1f,0 0 80px #f80f1f,0 0 100px #f80f1f,0 0 150px #f80f1f;}
-.clock_ {float:left;overflow_:hidden;background-color:#fff;color:#222;border-radius: 30%;position:relative;width:20%;height:0;padding-bottom:20%;margin:3% 0 3% 4%;}
-.clock____ .num {font-size:350%;font-weight:700;height_:190%;line-height:170%;}
-.clock .num-small {font-size:100%;font-weight:700;}
-.clock____ .text {font-size:130%;text-transform:uppercase;background-color:#eee;position:absolute;bottom:0;width:100%;line-height:180%;}
-.clock.tet{background-color:#f6361e;}
-.clock.tet .text{background-color:#d00120;}
-#taitro{margin-top:3.4em;}
-.float{display:flex;align-items:center;}
-.float {font-size:1.3em;}
-@media (min-width:1025px) {.float{display:none;}}
-
-
-</style>
-
-
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&amp;display=swap" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
-
-
-
-<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js" nonce="wWtwTlkJ"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-EP8XSY9WST&amp;l=dataLayer&amp;cx=c" nonce="wWtwTlkJ"></script><script src="https://connect.facebook.net/vi_VN/sdk.js?hash=5add5c49a063451b9d3e1ab6ee22e966&amp;ua=modern_es6" async="" crossorigin="anonymous"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-KGBCJR8"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KGBCJR8');</script><style type="text/css" data-fbcssmodules="css:fb.css.basecss:fb.css.dialog css:fb.css.iframewidget">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#fff;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
-.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
-.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
-<body class="home"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGBCJR8"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!--a class="sr" href="#main"></a-->
-<header role="banner" id="header">
-	<!--a class="logo" href="/" rel="home"><img src="/saptet.com.png" alt=""></a-->
-	
-	
-</header>
-<main id="main">
-			<article class="main-article">
-			<header>
-				
-				<h1 class="coming">Coming Soon LiRa 2.0</h1>
-			</header>
-			<div class="content">
-								<section>
-				<div id="tetornot" class="coming">Vui lòng chờ đợi</div>
-				<div class="clock">
-					<div class="clock-item">
-					<div id="" class="num">?</div>
-					<div id="" class="num">?</div>
-					<div id="" class="text">Ngày</div>
-					</div>
-					<div class="clock-item">
-					<div id="hours" class="num">1</div>
-					<div id="hours-text" class="text">Giờ</div>
-					</div>
-					<div class="clock-item">
-					<div id="mins" class="num">15</div>
-					<div id="mins-text" class="text">Phút</div>
-					</div>
-					<div class="clock-item">
-					<div id="secs" class="num">6</div>
-					<div id="secs-text" class="text">Giây</div>
-					</div>
-				</div>
-				</section>
-				
-
-			</div>
-			<br><br>
-			<center><p class="coming">LiRa Team @2021</p></center>			</article>
-			
-			
-<div id="main" style="z-index:100;position:relative;">
-	
-
-
-	<!--p style="font-size:135%;margin-top:.5em;">www.saptet.com</p-->
-	<!--div id="taitro">
-		<a href="https://tinnhanh.net/" target="_blank">TinNhanh.net<br />Tin tức thời gian thực</a>
-	</div-->
+<div class="headhov">
+  <center>
+  <div style="margin-top: 100px; margin-bottom: 100px; margin-left: 115px; margin-right: 115px" class="row zoom animated swirlzebra">
+ <div class="zebrablur zoom">
+  <div class="zebrablur-inside">
+    <img src="./assets/liraicon.png" style="width: 200px; height: 200px" class="filter">
+  </div>
+ </div>
 </div>
-<div style="position:fixed;left:0;right:0;bottom:4.5em;font-size:1.2em;">
+<div class="filter animated fadeInUp" id="repotitle">
+        LiRa
+    </div>
+</center>
+</div>
+
+    
+
+    <div class="filter animated fadeInUp" id="repodesc">
+        <p>for iOS 12.4 - 13.5 (13.5.1 beta1)<br>bởi <a href="https://www.facebook.com/hoahuynh.htbn/"> LiRa Team</a></p>
+    </div>
+<br>
+<center>
+<img src="./assets/tag.png" style="width: 100px; height: 100px" class="filter animated fadeInUp">
+</center>
+<br>
+    <div style="margin-left: 30px; margin-right: 30px" class="filter animated fadeInUp" id="clickto">
+Trình quản lý tweak chính
+    </div>
+
+<div style="margin-top: 60px; margin-bottom: 90px"; class="animated fadeIn2">
+
+<center>
+
+<div style="margin-top: 25px; margin-bottom: 25px; margin-left: 40px; margin-right: 40px" >
+    <img src="./assets/zebraicon.png" style="width: 125px; height: 125px" class="filter">
+
+<div class="filter animated fadezebra" id="caption">Zebra</div>
+</div>
+
+</center>
 
 </div>
-<!--div class="float" style="position:fixed;left:0;right:0;bottom:4em;">
-<button class="fly-click" data-flyid="#a2hs">Thêm vào màn hình chính</button>
+
+<br>
+<br>
+<br>
+
+<center>
+
+<div class="animated fadeInUp" id="cardbox">
+
+<br>
+<br>
+
+<center>
+<img class="filter" src="./assets/arrow.png" width="100px">
+
+<h1 class="filter">Download</h1>
+<br><br><br><br><br>
+                <a href=""><img src="./assets/2.0cs.png" width="40%"></a>
+
+                <a href='http://dstats.net/download.php?file=https://hoahuynh-lira.github.io/LiRa-1.2.3.ipa'><img src="./assets/1.2.3.png" width="40%"></a><br><br><br>
+</center>
+</div>
+<center>
+<div style="margin-top: 80px; margin-bottom: 60px; margin-right: 35px" class="row">
+<hr width="220px" class="filter hr2">
+</div>
+<div style="margin-top: 80px; margin-bottom: 60px" class="filter row">
+<p>Thông Tin</p>
+</div>
+<div style="margin-top: 80px; margin-bottom: 60px; margin-left: 35px" class="row">
+<hr width="220px" class="filter hr2">
+</div>
+</center>
+
+<!--div class="package-header">
+<div style="justify-items: stretch;" class="w-full lg:min-w-1/2 justify-between items-center flex-wrap -mt-1 pt-px flex lg:w-1/2 lg:flex-grow">
+<div class="labels">
+<div class="icon-container" style="width: 140px; height: 140px; border-radius: 20%; margin-right: 20px; margin-left: 15px; overflow:hidden;">
+<img src="./assets/liraicon.png" style="height: 100%;" />
+
+</div>
+<div class="info-container">
+<div class="name">LiRa</div>
+<div class="identifier">phiên bản: 2.0</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<hr class="filter hr1">
+<br>
+<center><img class="imageleft" src="./assets/banner2.png" style="border-radius: 2%;" width="95%"></center>
+<br>
+<h3>Thông tin</h3>
+<p>
++ Câph nhật GUI 2.0.
+<br>
++ Cập nhật hệ thống phù hợp iOS12.
+<br>
++ Cập nhật Bootstrap iOS12.
+<br>
++ Cập nhật Exploit time_waste hộ trợ iOS12.
+<br>
++ Cập nhật AMFI mới.
+<br>
++ Cập nhật Logo mới.
+<br>
++ Cập nhật tết Tân Sửu 2021.</p>
+<h3>Giao diện</h3>
+<p>Trong bản 2.0 chúng tôi đã thiết kế lại giao diện mới được viết lại 100% SwiftUI.</p>
+<br>
+<a href="https://alexpng.github.io/depictions/com.alexpng.darkpapers/index.html">
+<h4>Xem thêm</h4>
+</a-->
+<div style="margin-bottom: 20px"><br><br></div>
+</div>
 </div-->
 
+<div class="animated fadeInUp" id="cardbox">
+<div class="packages" id="packages">
+<br>
+<br>
+<div class="package-header">
+<div style="justify-items: stretch;" class="w-full lg:min-w-1/2 justify-between items-center flex-wrap -mt-1 pt-px flex lg:w-1/2 lg:flex-grow">
+<div class="labels">
+<div class="icon-container" style="width: 140px; height: 140px; border-radius: 20%; margin-right: 20px; margin-left: 15px; overflow:hidden;">
+<img src="./assets/liraicon.png" style="height: 100%;" />
+
+</div>
+<div class="info-container">
+<div class="name">LiRa</div>
+<div class="identifier">phiên bản: 2.0</div>
+<div class="identifier">Sắp phát hành</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+    <hr class="filter hr1">
+<br>
+<center><img class="imageleft" src="./assets/banner2.png" style="border-radius: 2%;" width="95%"></center>
+<br>
+<h3>Thông tin</h3>
+<!--p>
++ Câph nhật GUI 2.0.
+<br>
++ Cập nhật hệ thống phù hợp iOS12.
+<br>
++ Cập nhật Bootstrap iOS12.
+<br>
++ Cập nhật Exploit time_waste hộ trợ iOS12.
+<br>
++ Cập nhật AMFI mới.
+<br>
++ Cập nhật Logo mới.
+<br>
++ Cập nhật tết Tân Sửu 2021.</p-->
+<h3>Giao diện</h3>
+<p>Trong bản 2.0 chúng tôi đã thiết kế lại giao diện mới được viết lại 100% SwiftUI.</p>
+<br>
+<div style="margin-bottom: 20px"><br><br></div>
+</div>
+</div>
+
+<div class="animated fadeInUp" id="cardbox">
+<div class="packages" id="packages">
+<br>
+<br>
+<div class="package-header">
+<div style="justify-items: stretch;" class="w-full lg:min-w-1/2 justify-between items-center flex-wrap -mt-1 pt-px flex lg:w-1/2 lg:flex-grow">
+<div class="labels">
+<div class="icon-container" style="width: 140px; height: 140px; border-radius: 20%; margin-right: 20px; margin-left: 15px; overflow:hidden;">
+<img src="./assets/liraicon.png" style="height: 100%;" />
+
+</div>
+<div class="info-container">
+<div class="name">LiRa</div>
+<div class="identifier">phiên bản: 1.2.3</div>
+<div class="identifier">29-11-2020</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+    <hr class="filter hr1">
+<br>
+<center><img class="imageleft" src="https://raw.githubusercontent.com/hoahuynh-lira/hoahuynh-lira.github.io/master/images/iphone-banner.png" style="border-radius: 2%;" width="25%"></center>
+<br>
+<h3>Thông tin</h3>
+<p>+ Cập nhật GUI mới.
+<br>
++ Cập nhật thêm Repo mới.
+<br>
++ Cập nhật Bootstrap mới.
+<br>
++ Sửa Exploit time_waste tăng tỉ lệ thành công.
+<br>
++ Sửa lỗi Jailbreak.
+<br>
++ Sửa lỗi gây lỗi Reboot thiết bị.
+<br>
++ Sửa lỗi đống băng bộ nhớ gây treo thiết bị hoặc lỗi Camera.
+</p>
+<div style="margin-bottom: 20px"><br><br></div>
+</div>
+</div>
+
+<div class="container text-center my-5">
+    <h2>Thành Viên</h2>
+    <br>
+</div>
+<div class="container">
+    <div class="row">
+        
+        <div class="col-md-4 col-12 credits-item d-flex align-items-center">
+            <a href="https://twitter.com/hoa_huynh19">
+                <img src="https://pbs.twimg.com/profile_images/1338414060086251520/yN0D4S49_400x400.jpg" alt="">
+            </a>
+            <div class="media-body w-100">
+                <h4 class="mb-1">
+                    <a href="https://twitter.com/hoa_huynh19">Hòa Huỳnh</a>
+                </h4>
+                
+            </div>
+        </div>
+        
+        <div class="col-md-4 col-12 credits-item d-flex align-items-center">
+            <a href="https://twitter.com/YcS_Dev">
+                <img src="https://pbs.twimg.com/profile_images/1160176008487510016/ewP30-Lc_400x400.jpg" alt="">
+            </a>
+            <div class="media-body w-100">
+                <h4 class="mb-1">
+                    <a href="https://twitter.com/YcS_Dev">YcS_Dev</a>
+                </h4>
+                
+            </div>
+        </div>
+        
+        <div class="col-md-4 col-12 credits-item d-flex align-items-center">
+            <a href="https://twitter.com/TinLinjb">
+                <img src="https://pbs.twimg.com/profile_images/1036938944401702912/kBgLJS7A_400x400.jpg" alt="">
+            </a>
+            <div class="media-body w-100">
+                <h4 class="mb-1">
+                    <a href="https://twitter.com/TinLinjb">TiLin</a>
+                </h4>
+               
+            </div>
+        </div>
+        <div class="col-md-4 col-12 credits-item d-flex align-items-center">
+            <a href="https://twitter.com/H_PW2NTP">
+                <img width="400" src="https://pbs.twimg.com/profile_images/1081925920393318403/KvGOg4w3_400x400.jpg" alt="">
+            </a>
+            <div class="media-body w-100">
+                <h4 class="mb-1">
+                    <a href="https://twitter.com/H_PW2NTP">H_PW2NTP</a>
+                </h4>
+                
+            </div>
+        </div>
+        <div class="container text-center my-5">
+    <h2>Testing</h2>
+    <br>
+</div>
+        <div class="col-md-4 col-12 credits-item d-flex align-items-center">
+            <a href="">
+                <img width="400" src="https://hoahuynh-lira.github.io/images/team/donalchum.jpg" alt="">
+            </a>
+            <div class="media-body w-100">
+                <h4 class="mb-1">
+                    <a href="">Đô Nal Chum</a>
+                </h4>
+                
+            </div>
+        </div>
+         <div class="col-md-4 col-12 credits-item d-flex align-items-center">
+            <a href="https://www.facebook.com/profile.php?id=100007565499798">
+                <img width="400" src="https://scontent.fsgn5-3.fna.fbcdn.net/v/t1.0-9/83405107_2608277952767696_7548332874311279115_o.jpg?_nc_cat=110&ccb=2&_nc_sid=09cbfe&_nc_ohc=Vwh-DgnJKr0AX9bqtfz&_nc_ht=scontent.fsgn5-3.fna&oh=3c75796190fd57a5e0486a9b59921526&oe=602B821B" alt="">
+            </a>
+            <div class="media-body w-100">
+                <h4 class="mb-1">
+                    <a href="https://www.facebook.com/profile.php?id=100007565499798">Minh Nhựt</a>
+                </h4>
+                
+            </div>
+        </div>
+        <div class="col-md-4 col-12 credits-item d-flex align-items-center">
+            <a href="https://www.facebook.com/profile.php?id=100040619573633">
+                <img width="400" src="https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/136073390_424814605549188_4493745805691386262_n.jpg?_nc_cat=104&ccb=2&_nc_sid=09cbfe&_nc_ohc=93m1dlbAKXsAX8Pavkj&_nc_ht=scontent.fsgn5-4.fna&oh=abb22a29beef3308514d903d5c87821b&oe=602B2A67" alt="">
+            </a>
+            <div class="media-body w-100">
+                <h4 class="mb-1">
+                    <a href="https://www.facebook.com/profile.php?id=100040619573633">Vinh Ngô</a>
+                </h4>
+                
+            </div>
+        </div>
+         <div class="col-md-4 col-12 credits-item d-flex align-items-center">
+            <a href="https://www.facebook.com/thongbn2k3/">
+                <img width="400" src="https://scontent.fsgn5-7.fna.fbcdn.net/v/t1.0-9/125792083_746595646201183_2878643483202218330_o.jpg?_nc_cat=103&ccb=2&_nc_sid=09cbfe&_nc_ohc=HzJmvie3qO4AX_ZXCaG&_nc_ht=scontent.fsgn5-7.fna&oh=c35e3f8557a3708e0a6c98c126f27ea9&oe=602BF668" alt="">
+            </a>
+            <div class="media-body w-100">
+                <h4 class="mb-1">
+                    <a href="https://www.facebook.com/thongbn2k3/">Thông</a>
+                </h4>
+                
+            </div>
+        </div>
+        <div class="container text-center my-5">
+    <h2>Cảm Ơn</h2>
+    <br>
+</div>
+<div class="col-md-4 col-12 credits-item d-flex align-items-center">
+            <a href="https://twitter.com/getZebra">
+                <img width="400" src="https://pbs.twimg.com/profile_images/1127607228423340032/Td0OHVep_400x400.png" alt="">
+            </a>
+            <div class="media-body w-100">
+                <h4 class="mb-1">
+                    <a href="https://twitter.com/getZebra">Zebra</a>
+                </h4>
+               
+            </div>
+        </div>
+         <div class="col-md-4 col-12 credits-item d-flex align-items-center">
+            <a href="hhttps://twitter.com/Jakeashacks">
+                <img width="400" src="https://pbs.twimg.com/profile_images/936713472628289536/qBfbF_I8_400x400.jpg" alt="">
+            </a>
+            <div class="media-body w-100">
+                <h4 class="mb-1">
+                    <a href="https://twitter.com/Jakeashacks">Jake James</a>
+                </h4>
+                
+            </div>
+        </div>
+        <div class="col-md-4 col-12 credits-item d-flex align-items-center">
+            <a href="https://twitter.com/tihmstar">
+                <img width="400" src="https://pbs.twimg.com/profile_images/3287607055/85f6414b1b35d431296a3dd243f4a903_400x400.png" alt="">
+            </a>
+            <div class="media-body w-100">
+                <h4 class="mb-1">
+                    <a href="https://twitter.com/tihmstar">Tihmstar</a>
+                </h4>
+               
+            </div>
+        </div>
+         <div class="col-md-4 col-12 credits-item d-flex align-items-center">
+            <a href="https://twitter.com/_simo36">
+                <img width="400" src="https://pbs.twimg.com/profile_images/1025156553199034368/JdaPlLy0_400x400.jpg" alt="">
+            </a>
+            <div class="media-body w-100">
+                <h4 class="mb-1">
+                    <a href="https://twitter.com/_simo36">Simo</a>
+                </h4>
+                
+            </div>
+        </div>
+ <div class="col-md-4 col-12 credits-item d-flex align-items-center">
+            <a href="https://twitter.com/FreeTheSandbox">
+                <img width="400" src="https://pbs.twimg.com/profile_images/1193736973279612928/DAILv1Wl_400x400.jpg" alt="">
+            </a>
+            <div class="media-body w-100">
+                <h4 class="mb-1">
+                    <a href="https://twitter.com/FreeTheSandbox">FreeTheSandbox</a>
+                </h4>
+                
+            </div>
+        </div><div class="col-12">
+
+</div>
+</div>
+</div>
+</center>
+<center><!--img width="350px" src="./assets/nws2.png"--></center>
 
 
-	</main>
-<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
-<script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&amp;version=v9.0" nonce="wWtwTlkJ"></script>
-<div class="scrim fly-close"></div>
-<script src="https://www.saptet.com/__/_script.js?2021"></script>
-<script>$(document).ready(function(){var e=[{name:"Mậu Tuất",m1:Date.parse("Feb 16 2018 00:00:00")},{name:"Kỷ Hợi",m1:Date.parse("Feb 5 2019 00:00:00")},{name:"Canh Tý",m1:Date.parse("Jan 25 2020 00:00:00")},{name:"Tân Sửu",m1:Date.parse("Feb 12 2021 00:00:00")}],t=e.length;setInterval(function(){for(var a=(new Date).getTime(),n=0;n<t;n++){var o=e[n].m1-864e5,r=e[n].m1+864e5,s=e[n].m1+2592e5;if(a<=s){var m=e[n].m1,l=!1,f=(e[n].name,"Chúc"),i="Mừng",x="Năm",c="Mới",h="Ngày",g="Giờ",u="Phút",d="Giây";if(a>=e[n].m1&&(m=s,a>=r||(l=!0,h="Cung",g="Chúc",u="Tân",d="Xuân")),!l){var M=m-a;c=Math.floor(M/1e3%60),x=Math.floor(M/1e3/60%60),i=Math.floor(M/36e5%24),f=Math.floor(M/864e5)}$("#days").text(f),$("#days-2").text("Ông Táo: "+Math.floor((Date.parse("Feb 4 2021 00:00:00")-a)/864e5)),$("#hours").text(i),$("#mins").text(x),$("#secs").text(c),$("#days-text").text(h),$("#hours-text").text(g),$("#mins-text").text(u),$("#secs-text").text(d),a>=o&&($("html").css({background:"radial-gradient(ellipse at bottom, #efe81d 0%, #f80f1f 100%)"}),$(".clock").toggleClass("tet"),$(".clock .text").toggleClass("tet"));break}}},1e3)});
-$('a[target!="_blank"]').each(function (e) {
-	var idx = this.href.lastIndexOf("#");
-	if (idx > -1) this.href = this.href.substr(0, idx) + window.location.search + this.href.substr(idx); else this.href += window.location.search;
-	});var form_msg_invalid='Vui lòng nhập thông tin',form_msg_done='Cảm ơn bạn đã gửi thư liên hệ.',form_msg_error='Đã xảy ra lỗi! Vui lòng thử lại sau.';if (window.location.href.indexOf("utm_source=p") != -1) {$('.a2hs').hide();}</script>
-<!--script>var form_msg_invalid='Vui lòng nhập thông tin',form_msg_done='Cảm ơn bạn đã gửi thư liên hệ.',form_msg_error='Đã xảy ra lỗi! Vui lòng thử lại sau.';$(document).ready(function(){var t=[{name:"Mậu Tuất",m1:Date.parse("Feb 16 2018 00:00:00")},{name:"Kỷ Hợi",m1:Date.parse("Feb 5 2019 00:00:00")},{name:"Canh Tý",m1:Date.parse("Jan 25 2020 00:00:00")},{name:"Tân Sửu",m1:Date.parse("Feb 12 2021 00:00:00")}],e=t.length;setInterval(function(){for(var n=(new Date).getTime(),a=0;a<e;a++){var o=t[a].m1-864e5,r=t[a].m1+864e5,m=t[a].m1+2592e5;if(n<=m){var i=t[a].m1,s=!1,c=a+2018,g=t[a].name+" "+c,p="Đếm ngược đến Tết "+g+" - Sắp Tết!",l="Sắp Tết rồi!!! Chỉ còn...",h="Chúc",u="Mừng",x="Năm",T="Mới",f="Ngày",y="Giờ",d="Phút",C="Giây";if(n>=t[a].m1&&(i=m,n>=r?l="Sắp hết Tết rồi!!!":(s=!0,l="Tết rồi!!!Tết rồi!!!",f="Cung",y="Chúc",d="Tân",C="Xuân")),!s){var b=i-n;T=Math.floor(b/1e3%60),x=Math.floor(b/1e3/60%60),u=Math.floor(b/36e5%24),h=Math.floor(b/864e5)}$("#tetornot").text(l),$("#days").text(h),$('#days-2').text('Ông Táo: '+Math.floor((Date.parse("Feb 4 2021 00:00:00")-n)/(1000*60*60*24))),$("#hours").text(u),$("#mins").text(x),$("#secs").text(T),$("#days-text").text(f),$("#hours-text").text(y),$("#mins-text").text(d),$("#secs-text").text(C),$("#tet").text(g),n>=o&&($("html").css({background:"radial-gradient(ellipse at bottom, #efe81d 0%, #f80f1f 100%)"}),$(".clock").toggleClass("tet"),$(".clock .text").toggleClass("tet"));break}}},1e3);if (window.location.href.indexOf("source") != -1) {$('.float').hide();}});</script--></body></html>
+
+
+
+
+<div class="animated fadeInUp" id="bottomnavnar">
+<br>
+<div>Website bởi LiRa Team  ©  2021</div>
+</div>
+
+</body>
+</html>
