@@ -17,8 +17,11 @@
           "views": [
             {
               "class": "FeaturedHeaderView",
-              "packageIcon": "https://lirateam.github.io/lisstore.png",
-              "title": "LiStore",
+              "URL":"https://lirateam.github.io/lisstore.png",
+                    "width":120,
+                    "height":120,
+                    "horizontalPadding":30,
+              "title": "Thông Tin",
               "useBoldText": true
             },
             {
@@ -29,11 +32,12 @@
             {
                     "class":"DepictionImageView",
                     "URL":"https://lirateam.github.io/lisstore.png",
-                    "width":60,
-                    "height":60,
+                    "width":120,
+                    "height":120,
                     "horizontalPadding":30,
                     "cornerRadius":0,
-                    "alignment":1
+                    "alignment":1,
+                    "title": "LiStore"
                 },
             {
               "markdown": "Đaay",
