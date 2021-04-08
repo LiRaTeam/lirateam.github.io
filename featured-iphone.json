@@ -19,7 +19,7 @@
                 "class": "FeaturedPackageView",
                 "package": "",
                 "packageName": "Snoverlay 2",
-                "useBoldText":true,"useBottomMargin":true,"class":"DepictionSubheaderView"},{"markdown":"Đaay","useSpacing":false,"class":"DepictionMarkdownView"},{"markdown":"","useRawFormat":true,"class":"DepictionMarkdownView"}
+                "useBoldText":true,"useBottomMargin":true,"class":"DepictionSubheaderView","markdown":"Đaay","useSpacing":false,"class":"DepictionMarkdownView","markdown":"","useRawFormat":true,"class":"DepictionMarkdownView",
                 "packageIcon": "https://featuredpage.getsileo.app/icons/com.ryannair05.snoverlay.png"
             }, {
                 "class": "FeaturedPackageView",
