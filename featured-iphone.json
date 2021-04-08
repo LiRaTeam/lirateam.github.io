@@ -15,15 +15,7 @@
           "class": "FeaturedStackView",
           "preferredWidth": 400,
           "views": [
-            {
-              "class": "FeaturedHeaderView",
-              "URL":"https://lirateam.github.io/lisstore.png",
-                    "width":120,
-                    "height":120,
-                    "horizontalPadding":30,
-              "title": "Thông Tin",
-              "useBoldText": true
-            },
+            
             {
               "class": "DepictionSubheaderView",
               "useBoldText": true,
@@ -37,8 +29,13 @@
                     "horizontalPadding":30,
                     "cornerRadius":0,
                     "alignment":1,
-                    "title": "LiStore"
+                   
                 },
+                {
+              "class": "FeaturedHeaderView",
+              "title": "LiStore",
+              "useBoldText": true
+            },
             {
               "markdown": "Đaay",
               "useSpacing": false,
@@ -51,25 +48,7 @@
             }
           ]
         },
-        {
-          "class": "FeaturedStackView",
-          "preferredWidth": 400,
-          "views": [
-            {
-              "class": "FeaturedHeaderView",
-              "title": "Công Cụ",
-              "useBoldText": true
-            },
-            {
-              "class": "FeaturedPackageView",
-              "package": "com.colec.bigsnooze",
-              "packageName": "BigSnooze",
-              "packageAuthor": "cole cabral",
-              "repoName": "Packix",
-              "packageIcon": "https://featuredpage.getsileo.app/icons/com.colec.bigsnooze.png"
-            }
-          ]
-        }
+        
       ]
     },
     {
