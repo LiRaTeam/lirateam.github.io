@@ -37,7 +37,7 @@
               "useBoldText": true
             },
             {
-              "markdown": "Đaay",
+              "markdown": "Đây là trình quản lý Package sau khi jailbreak bằng công cụ LiRa.\nĐược viết trên một phần mã nguồn mỡ Sileo và được chỉnh sửa toàn bộ Code tới giao diện, để gút gọn thời gian phát triển LiStore.\nĐây là một trong những dựa án cho iOS trong năm 2021.",
               "useSpacing": false,
               "class": "DepictionMarkdownView"
             },
