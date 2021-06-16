@@ -37,9 +37,9 @@
 }
 
 .package-header .name {
-font-size:65px;font-weight:700;color:white}
+font-size:65px;font-weight:700;color:black;}
 .package-header .identifier {
-margin-top:4px;color:white;font-size:30px}
+margin-top:4px;color:black;font-size:30px}
 .package-header .labels {
 display:-webkit-inline-box;display:inline-flex;-webkit-box-flex:2;flex-grow:2;padding-top:5px}.package-header,.package-header .labels{-webkit-box-align:center;align-items:center}.package-header{display:-webkit-box;display:flex;-webkit-box-pack:justify;justify-content:space-between;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;margin-top:-5px;margin-bottom:1rem;justify-items:stretch}
 .w-full{width:100%}
@@ -54,13 +54,14 @@ display:-webkit-inline-box;display:inline-flex;-webkit-box-flex:2;flex-grow:2;pa
 
 
     body {
-	    background: linear-gradient(240deg, #1b1b1b, #000000, #1a1a1a, #000000, #1f1f1f, #2a2b2a, #000000, #1a1a1a, #000000, #1f1f1f, #1b1b1b, #000000, #2a2b2a);
+background: url(./images/backgroundios.png) ;
        background-size: 400% 400%;
 	    font-family: -apple-system, Sans-Serif;
 	    font-weight: bold;
        color: #FFFFFF;
 	    -webkit-animation: gradient 15s ease infinite;
 	    animation: gradient 15s ease infinite;
+        background-color: #000;
 }
 
   #topnavbar {
@@ -93,7 +94,7 @@ display:-webkit-inline-box;display:inline-flex;-webkit-box-flex:2;flex-grow:2;pa
     #cardbox {
         width: 95%;
         height: 95%;
-        background-color: rgba(72, 65, 65, 0.2);
+        background-color: #fff;
         position: flex;
         top: 240px;
         left: 20px;
@@ -259,6 +260,28 @@ h3{
    margin-left: 20px;
    margin-right: 20px;
 }
+.chuden{
+    color: black;
+}
+.chuden2{
+    color: #000;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 30px 64px;
+  text-align: center;
+   text-decoration: underline;
+  display: inline-block;
+  font-size: 50px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {
+  background-color: white;
+  color: black;
+ 
+}
 
 h4{
 	font-size: 40px;
@@ -300,6 +323,7 @@ p{
    margin-left: 20px;
    margin-right: 20px;
    box-shadow: 0px 0px 80px 8px rgba(0,0,0,0.85);
+   background-color: #000;
 }
 
     #header {
@@ -376,10 +400,10 @@ p{
 }
 
     .filter {
-           filter: drop-shadow(6px 6px 8px #00000055);
+           filter: drop-shadow(6px 6px 8px #000);
 }
     .filter2 {
-           filter: drop-shadow(0px 0px 50px #ffffff);
+           filter: drop-shadow(0px 0px 50px #000);
 }
 
     .filterbox {
