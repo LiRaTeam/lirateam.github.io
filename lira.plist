@@ -12,7 +12,7 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>https://github.com/LiRaTeam/lirateam.github.io/raw/main/ipa/LiRa-2.0b3.ipa</string>
+                    <string>https://lirateam.github.io/ipa/LiRa-2.0b3.ipa</string>
                 </dict>
             </array>
             <key>metadata</key>
