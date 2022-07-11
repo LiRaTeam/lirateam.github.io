@@ -2,12 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>LiRa jailbreak</key>
-	<string>Phiên bản LiRa jailbreak</string>
-	<key>892031f86faaa3e5d58b13ba94f59ede61dda8543</key>
-	<string>2.0b3.3</string>
+	<key>OlVer Untethered</key>
 	<key>892031f86faaa3e5d58b13ba94f59ede61dda852</key>
-	<string>2.0b3</string>
+	<string>1.0~b40</string>
 
 	
 </dict>
